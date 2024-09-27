@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.slideshow-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative; /* Make container relative for absolute positioning */
+}
+
+.slideshow {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth transition between slides */
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slide img {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  object-fit: cover; /* Ensure the image covers the entire slide */
+}
+
+.overlay-container {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(
+    -25%,
+    -25%
+  ); /* Centers the content horizontally and vertically */
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: left;
+  text-align: left;
+  z-index: 1; /* Ensures the overlay appears above other content */
+}
+
+/* Styling for the text */
+.text {
+  font-size: 36px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Styling for the button */
+.button {
+  margin-top: 15px; /* Add space between text and button */
+  padding: 10px 20px;
+
+  width: 200px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+#landingPage {
+  color: white;
+  letter-spacing: 4px;
+  font-size: 72px;
+  font-weight: bold;
+  z-index: 2; /* Ensures the text appears above the images */
+  /* Add text stroke */
+  -webkit-text-stroke: 5px white; /* WebKit browsers */
+}
+.sticky-nav {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  padding: 1em;
+  align-items: end;
+  z-index: 1000; /* Set higher z-index to bring the nav above the slideshow */
+}
+
+.sticky-nav ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+.sticky-nav ul li {
+  display: inline-block;
+}
+
+.sticky-nav ul li a {
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.sticky-nav ul li a:hover {
+  background-color: #575757;
+}
+.sticky-nav ul li a.active {
+  background-color: red;
+}
+
+.section {
+  height: 100%; /* Ensuring there's enough height for scrolling */
+}
+#section2,
+#section3,
+#section4,
+#section5 {
+  padding-top: 3.5em;
+}
+
+/*SECTION 2 - PENRO*/
+
+.section-a {
+  padding: 3.5em;
+  font-size: 24px;
+  text-align: justify;
+}
+
+/*SECTION 2 - QUARRY AND FORESTRY*/
+.section-b {
+  width: 100%;
+  text-align: center; /* Ensure text inside section is centered */
+}
+
+.service {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Full width to properly center items */
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.service-item {
+  border: 1px solid black;
+  padding: 3em;
+  width: 25%;
+  text-align: center;
+}
+/*SECTION 4 - CN PENRO TEAM*/
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  border: 1px solid black;
+  padding: 3em;
+  margin: 1em;
+  text-align: center;
+  width: 25%; /* Each cell now takes up half the width of the row */
+}
+
+/*SECTION 5 - FREQUENTLY ASKED QUESTION*/
+.row-a {
+  display: flex;
+  flex-direction: column; /* Items stack vertically */
+  justify-content: center; /* Center items vertically within the container */
+}
+
+.cell-a {
+  border: 1px solid black;
+  text-align: center;
+  padding: 1em;
+  width: 75%; /* Set a width for each cell, 50% of the container */
+  margin: 10px auto; /* Optional: to center each cell and add spacing between them */
+}
