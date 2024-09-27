@@ -3,42 +3,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Horizontal Slideshow</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Sticky Navigation with Smooth Scroll</title>
+    <link rel="stylesheet" href="trial.css" />
   </head>
+
   <body>
-    <div class="slideshow-container">
-      <h1 class="text">text over matter</h1>
-      <div class="slideshow" id="slideshow">
-        <div class="slide">
-          <img src="penro (1).jpg" alt="Slide 1" />
+    <header>
+      <nav class="sticky-nav">
+        <ul>
+          <li><a href="#section1" class="nav-link">Section 1</a></li>
+          <li><a href="#section2" class="nav-link">Section 2</a></li>
+          <li><a href="#section3" class="nav-link">Section 3</a></li>
+          <li><a href="#section4" class="nav-link">Section 4</a></li>
+          <li><a href="#section5" class="nav-link">Section 5</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="section1" class="section">
+      <div class="slideshow-container">
+        <div class="overlay-container">
+          <h1 class="text" id="landingPage">
+            PROVINCIAL ENVIRONMENT AND NATURAL RESOURCES OFFICE
+          </h1>
+          <button class="button">CLICK ME</button>
         </div>
-        <div class="slide">
-          <img src="penro (2).jpg" alt="Slide 1" />
-        </div>
-        <div class="slide">
-          <img src="penro (3).jpg" alt="Slide 1" />
-        </div>
-        <div class="slide">
-          <img src="penro (4).jpg" alt="Slide 1" />
-        </div>
-        <div class="slide">
-          <img src="penro (5).jpg" alt="Slide 1" />
-        </div>
-        <div class="slide">
-          <img src="penro (6).jpg" alt="Slide 1" />
-        </div>
-        <div class="slide">
-          <img src="penro (7).jpg" alt="Slide 1" />
-          <!--NIGGA -->
+        <div id="slideshow" class="slideshow">
+          <div class="slide">
+            <img src="penro (1).jpg" alt="Slide 1" />
+          </div>
+          <div class="slide">
+            <img src="penro (2).jpg" alt="Slide 2" />
+          </div>
+          <div class="slide">
+            <img src="penro (3).jpg" alt="Slide 3" />
+          </div>
+          <div class="slide">
+            <img src="penro (4).jpg" alt="Slide 4" />
+          </div>
+          <div class="slide">
+            <img src="penro (5).jpg" alt="Slide 5" />
+          </div>
+          <div class="slide">
+            <img src="penro (6).jpg" alt="Slide 6" />
+          </div>
+          <div class="slide">
+            <img src="penro (7).jpg" alt="Slide 7" />
+          </div>
         </div>
       </div>
     </div>
-    <h1 class="h1">asdhlasld</h1>
-
-    <!--SCRIPT PLACE -->
-
-
-    <script src="script.js"></script>
+    <div id="section2" class="section-a">
+      <h1>About PENRO</h1>
+      <br />
+      <p>
+        The Camarines Norte PENRO plays a pivotal role in supporting the
+        province's sustainable development by preserving and protecting
+        ecosystems that are vital to key sectors such as agriculture, fisheries,
+        and tourism. As a steward of the province’s natural resources, PENRO is
+        committed to safeguarding biodiversity, promoting environmental
+        sustainability, and ensuring that natural resources are responsibly
+        utilized for the benefit of current and future generations.
+      </p>
+      <br />
+      <p>
+        PENRO actively engages with a diverse range of stakeholders, including
+        Local Government Units (LGUs), Non-Governmental Organizations (NGOs),
+        community groups, and the private sector. This collaboration fosters a
+        holistic approach to environmental preservation, ensuring that policies
+        and programs are inclusive and community-driven. By working closely with
+        these stakeholders, PENRO helps align provincial environmental goals
+        with national policies, enabling more effective implementation of
+        conservation and resource management initiatives.
+      </p>
+      <br />
+      <p>
+        Through its various programs, services, and partnerships, PENRO remains
+        dedicated to the protection and sustainable management of Camarines
+        Norte’s natural resources. The office not only addresses immediate
+        environmental concerns but also works towards long-term solutions that
+        foster ecological balance, ensuring that the province’s natural wealth
+        can be enjoyed by generations to come.
+      </p>
+      <br />
+    </div>
+    <div id="section3" class="section-b">
+      <div class="service">
+        <h2>FRONTLINE SERVICES</h2>
+      </div>
+      <div class="service-container">
+        <div class="service-item">
+          <h3>Sand, Gravel / Quarry Permits</h3>
+          <p>Short Description</p>
+          <br />
+          <a href="SeedlingInfo.html">LEARN MORE</a>
+        </div>
+        <div class="service-item">
+          <h3>Forest Tree Seedling</h3>
+          <p>Short Description</p>
+          <br />
+          <a href="#section1">LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+    <div id="section4" class="section">
+      <div class="service">
+        <h2>THE CNPENRO TEAM</h2>
+      </div>
+      <div class="table">
+        <div class="row">
+          <div class="cell">Cell 1</div>
+          <div class="cell">Cell 2</div>
+        </div>
+        <div class="row">
+          <div class="cell">Cell 3</div>
+          <div class="cell">Cell 4</div>
+        </div>
+        <div class="row">
+          <div class="cell">Cell 5</div>
+          <div class="cell">Cell 6</div>
+        </div>
+        <div class="row">
+          <div class="cell">Cell 7</div>
+          <div class="cell">Cell 8</div>
+        </div>
+      </div>
+    </div>
+    <script src="trial.js"></script>
   </body>
+  <div id="section5" class="section-e">
+    <div class="service">
+      <h2>FREQUENTLY ASKED QUESTIONS</h2>
+    </div>
+    <div class="row-a">
+      <div class="cell-a">asdljkasdjkl</div>
+      <div class="cell-a">asdljkasdjkl</div>
+      <div class="cell-a">asdljkasdjkl</div>
+      <div class="cell-a">asdljkasdjkl</div>
+      <div class="cell-a">asdljkasdjkl</div>
+      <div class="cell-a">asdljkasdjkl</div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
 </html>
