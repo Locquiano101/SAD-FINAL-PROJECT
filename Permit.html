@@ -3,68 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sand, Gravel / Quarry Permit</title>
     <link rel="stylesheet" href="Permit.css">
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <img src="logo.png" alt="Provincial Environment and Natural Resources Office">
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="header-text">
+                <h1>Republic of the Philippines</h1>
+                <h2>Provincial Environment and Natural Resources Office</h2>
+            </div>
         </div>
-        <div class="office-info">
-            <h1>PROVINCIAL ENVIRONMENT AND NATURAL RESOURCES OFFICE</h1>
-            <h2>Sand, Gravel / Quarry Permit</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+            <button class="login-btn">Login</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="permit-section">
+          <div>
+            <h1>SAND, GRAVEL / QUARRY PERMIT</h1>
+          </div>
+            <div class="permit-details">
+                <p><strong>Head of the Office:</strong> ENGR. LEOPOLDO P. BADIOLA</p>
+                <p><strong>Schedule of Availability of Service:</strong> Monday to Friday 8:00 AM - 12:00 NN, 1:00 PM - 5:00 PM</p>
+                <p><strong>Office/Division:</strong> Provincial Environment and Natural Resources Office</p>
+                <p><strong>Type of Transaction:</strong> Processing of Request for Forest Tree Seedlings</p>
+                <p><strong>Who May Avail:</strong> All Interested Individuals</p>
+            </div>
+        </section>
+
+        <section class="process-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Client Steps</th>
+                        <th>Agency Action</th>
+                        <th>Fees to be Paid</th>
+                        <th>Processing Time</th>
+                        <th>Person Responsible</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Submit letter-request stating species, number of seedlings, location.</td>
+                        <td>Approves request and forwards to PG-PENRO.</td>
+                        <td>-</td>
+                        <td>Depending on availability.</td>
+                        <td>Office of the Governor/Authorized Representative</td>
+                    </tr>
+                    <tr>
+                        <td>Follow-up request at PG-PENRO.</td>
+                        <td>Provides briefing and study request. Issues promissory note.</td>
+                        <td>-</td>
+                        <td>30 Minutes</td>
+                        <td>Engr. Leopoldo P. Badiola, EnP. Donna A. Guevarra, etc.</td>
+                    </tr>
+                    <!-- Add more rows as per your needs -->
+                </tbody>
+            </table>
+        </section>
+
+        <div class="actions">
+            <button class="request-btn">Apply for New Request</button>
+            <button class="permit-btn">Apply for New Permit</button>
         </div>
-    </div>
+    </main>
 
-    <div class="content">
-        <h3>Head of the Office: ENGR. LEOPOLDO P. BADIOLA</h3>
-        <p>Schedule of Availability of Service: Monday to Friday, 8:00 AM - 12:00 NN, 1:00 PM - 5:00 PM</p>
-
-        <table class="details">
-            <tr>
-                <td><strong>Office/Division:</strong></td>
-                <td>Provincial Environment and Natural Resources Office</td>
-            </tr>
-            <tr>
-                <td><strong>Type of Transaction:</strong></td>
-                <td>Processing of Request for Forest Tree Seedlings</td>
-            </tr>
-            <tr>
-                <td><strong>Who May Avail:</strong></td>
-                <td>All Interested Individuals</td>
-            </tr>
-        </table>
-
-        <h4>Client Steps</h4>
-        <table class="process">
-            <thead>
-                <tr>
-                    <th>Client's Steps</th>
-                    <th>Agency Action</th>
-                    <th>Fees to be Paid</th>
-                    <th>Processing Time</th>
-                    <th>Person Responsible</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Proceed to Office of the Government. Submit letter-request stating the species, number of seedlings, and location of planting site (private or public land).</td>
-                    <td>Approves request and forwards to PG-PENRO.</td>
-                    <td>-</td>
-                    <td>Depending on availability of the signatory</td>
-                    <td>Office of the Governor/Authorized Representative</td>
-                </tr>
-                <tr>
-                    <td>Follow-up request at PG-PENRO.</td>
-                    <td>Provides client with a short briefing, determines number of seedlings, and provides requirement.</td>
-                    <td>-</td>
-                    <td>30 minutes</td>
-                    <td>Engr. Leopoldo P. Badiola, EnP. Donna A. Guevarra, etc.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <footer>
+        <p>&copy; Provincial Environment and Natural Resources Office</p>
+    </footer>
 </body>
 </html>

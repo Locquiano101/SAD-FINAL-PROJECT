@@ -1,4 +1,3 @@
-/* Basic styles for the layout */
 * {
     margin: 0;
     padding: 0;
@@ -8,83 +7,137 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    padding: 20px;
+    color: #333;
 }
 
-.header {
+header {
+    background-color: #558d6e;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #2d5c48;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.header-text h1, .header-text h2 {
+    margin-left: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
     color: white;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: #7aa97a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.permit-section {
+    background-color: #d6e6d1;
     padding: 20px;
-    border-radius: 5px;
+    margin: 20px;
+    border-radius: 8px;
 }
 
-.logo img {
-    width: 100px;
-}
-
-.office-info {
-    text-align: right;
-}
-
-.office-info h1 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.office-info h2 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.content {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.content h3 {
-    color: #2d5c48;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.details {
-    width: 100%;
+.permit-section h1 {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.details td {
-    padding: 10px;
+.permit-details p {
+    margin: 10px 0;
 }
 
-.details td:first-child {
-    font-weight: bold;
+.process-table {
+    margin: 20px;
 }
 
-.process {
+table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
 }
 
-.process th,
-.process td {
+table, th, td {
     border: 1px solid #ddd;
     padding: 10px;
-    text-align: left;
 }
 
-.process th {
-    background-color: #2d5c48;
+th {
+    background-color: #4b8063;
     color: white;
 }
 
-.process td {
-    background-color: #f9f9f9;
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
 }
 
+.request-btn, .permit-btn {
+    background-color: #4b8063;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4b8063;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Button styling */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.green-button, .red-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.green-button {
+    background-color: #4CAF50;
+}
+
+.red-button {
+    background-color: #d9534f;
+}
+
+.green-button:hover, .red-button:hover {
+    opacity: 0.8;
+}
